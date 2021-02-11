@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">Sample Android</string>
+    <string name="menu_search">Search</string>
+    <string name="no_results">No results</string>
+    <string name="search_albums_by_artist">Search albums by artist</string>
+    <string name="ok_btn">OK</string>
+    <string name="error_getting_albums">There was error getting the albums. Please try again.</string>
+    <string name="price_label">Price</string>
+    <string name="genre_label">Genre</string>
+    <string name="released_date_label">Released</string>
+</resources>

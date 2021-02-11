@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_header_cl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_corners_top">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dialog_header_iv"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_foreground" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dialog_header_name_tv"
+        style="@style/AlbumTitle.White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialog_header_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Album Name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dialog_header_release_date_label_tv"
+        style="@style/AlbumValue.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/released_date_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialog_header_iv"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_header_name_tv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dialog_header_release_date_tv"
+        style="@style/AlbumValue.White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_header_release_date_label_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dialog_header_release_date_label_tv"
+        app:layout_constraintTop_toTopOf="@+id/dialog_header_release_date_label_tv"
+        tools:text="November 2020" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

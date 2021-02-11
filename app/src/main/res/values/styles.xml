@@ -1,0 +1,44 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+    </style>
+
+    <style name="AlbumTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="AlbumTitle.White" parent="AlbumTitle">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="AlbumLabel">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="AlbumValue">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="AlbumValue.Center" parent="AlbumValue">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="AlbumValue.White" parent="AlbumValue">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+</resources>
